@@ -3,30 +3,37 @@ NAME = libft
 OUTPUT_DIR = .
 
 # Other directories
-SOURCES_DIR = srcs
-INCLUDES_DIR = includes
+SOURCES_DIR = .
+INCLUDES_DIR = .
 
 # Files
-SOURCES =	$(SOURCES_DIR)/00_main.c \
-			$(SOURCES_DIR)/01_import.c \
-			$(SOURCES_DIR)/02_parse.c \
-			$(SOURCES_DIR)/03_check_map_error.c \
-			$(SOURCES_DIR)/04_ft_solve.c \
-			$(SOURCES_DIR)/04.1_ft_solve.c \
-			$(SOURCES_DIR)/05_output.c \
-			$(SOURCES_DIR)/05.1_sub_output.c \
-			$(SOURCES_DIR)/07_free.c \
-			$(SOURCES_DIR)/09_ft_util.c \
-			# $(SOURCES_DIR)/10_ft_dict_struct.c \
-			# $(SOURCES_DIR)/81_ft_util_01.c \
-			# $(SOURCES_DIR)/82_ft_util_02.c \
-			# $(SOURCES_DIR)/83_ft_util_03.c \
-			# $(SOURCES_DIR)/80_ft_util_vals.c \
-			# $(SOURCES_DIR)/10_ft_output.c \
+SOURCES =	$(SOURCES_DIR)/ft_isalpha.c \
+			$(SOURCES_DIR)/ft_isdigit.c \
+			$(SOURCES_DIR)/ft_isalnum.c \
+			$(SOURCES_DIR)/ft_isascii.c \
+			$(SOURCES_DIR)/ft_isprint.c \
+			$(SOURCES_DIR)/ft_strlen.c \
+			$(SOURCES_DIR)/ft_memset.c \
+			$(SOURCES_DIR)/ft_bzero.c \
+			$(SOURCES_DIR)/ft_memcpy.c \
+			$(SOURCES_DIR)/ft_memmove.c \
+			$(SOURCES_DIR)/ft_strlcpy.c \
+			$(SOURCES_DIR)/ft_strlcat.c \
+			$(SOURCES_DIR)/ft_toupper.c
+			$(SOURCES_DIR)/ft_tolower.c \
+			$(SOURCES_DIR)/ft_strchr.c \
+			$(SOURCES_DIR)/ft_strrchr.c \
+			$(SOURCES_DIR)/ft_strncmp.c \
+			$(SOURCES_DIR)/ft_memchr.c \
+			$(SOURCES_DIR)/ft_memcmp.c \
+			$(SOURCES_DIR)/ft_strnstr.c \
+			$(SOURCES_DIR)/ft_atoi.c \
+			$(SOURCES_DIR)/ft_calloc.c \
+			$(SOURCES_DIR)/ft_strdup.c
 
 OBJECTS =	$(SOURCES:.c=.o)
 
-HEADERS =	$(INCLUDES_DIR)/ft.h
+HEADERS =	$(INCLUDES_DIR)/libft.h
 
 # Compiler and options
 CC = cc
@@ -34,7 +41,7 @@ CFLAGS += -Wall -Wextra -Werror
 DEST = $(OUTPUT_DIR)
 
 # Phony targets
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re aclean ar
 
 # Default target
 all: $(NAME)
@@ -59,5 +66,8 @@ fclean: clean
 # Rebuild the project
 re: fclean all
 
-# all and clean
+# all and clean (not mandatory)
 aclean: all clean
+
+# # create library
+# ar: 
