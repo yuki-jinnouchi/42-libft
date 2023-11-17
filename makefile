@@ -19,7 +19,7 @@ SOURCES =	$(SOURCES_DIR)/ft_isalpha.c \
 			$(SOURCES_DIR)/ft_memmove.c \
 			$(SOURCES_DIR)/ft_strlcpy.c \
 			$(SOURCES_DIR)/ft_strlcat.c \
-			$(SOURCES_DIR)/ft_toupper.c
+			$(SOURCES_DIR)/ft_toupper.c \
 			$(SOURCES_DIR)/ft_tolower.c \
 			$(SOURCES_DIR)/ft_strchr.c \
 			$(SOURCES_DIR)/ft_strrchr.c \
