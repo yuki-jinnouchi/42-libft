@@ -1,5 +1,5 @@
 # Program name and output directory
-NAME = libft
+NAME = libft.a
 OUTPUT_DIR = .
 
 # Other directories
