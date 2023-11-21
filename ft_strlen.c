@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yjinnouc <yjinnouc@student.42berlin.d      +#+  +:+       +#+        */
+/*   By: yjinnouc <yjinnouc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/31 19:17:59 by yjinnouc          #+#    #+#             */
-/*   Updated: 2023/08/31 19:18:07 by yjinnouc         ###   ########.fr       */
+/*   Updated: 2023/11/21 00:40:12 by yjinnouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include <stdio.h>
+size_t ft_strlen(const char *s)
 {
 	int		n;
 

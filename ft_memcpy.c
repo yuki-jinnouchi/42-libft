@@ -6,7 +6,10 @@
 /*   By: yjinnouc <yjinnouc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 18:30:22 by yjinnouc          #+#    #+#             */
-/*   Updated: 2023/11/17 18:30:23 by yjinnouc         ###   ########.fr       */
+/*   Updated: 2023/11/21 00:48:39 by yjinnouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <libft.h>
+
+void *ft_memcpy(void *dest, const void *src, size_t n);

@@ -3,13 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yjinnouc <yjinnouc@student.42berlin.d      +#+  +:+       +#+        */
+/*   By: yjinnouc <yjinnouc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/30 01:28:36 by yjinnouc          #+#    #+#             */
-/*   Updated: 2023/08/31 02:06:36 by yjinnouc         ###   ########.fr       */
+/*   Updated: 2023/11/21 00:41:53 by yjinnouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 // int strncmp(const char *s1, const char *s2, size_t n);
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {

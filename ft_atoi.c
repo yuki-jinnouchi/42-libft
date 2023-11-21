@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yjinnouc <yjinnouc@student.42berlin.d      +#+  +:+       +#+        */
+/*   By: yjinnouc <yjinnouc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/26 02:58:55 by yjinnouc          #+#    #+#             */
-/*   Updated: 2023/08/31 19:25:38 by yjinnouc         ###   ########.fr       */
+/*   Updated: 2023/11/21 00:49:08 by yjinnouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int atoi(const char *nptr);
+#include <libft.h>
 
-int	ft_atoi(char *str)
+int ft_atoi(const char *nptr)
 {
 	int	i;
 	int	n;
