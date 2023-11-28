@@ -6,21 +6,22 @@
 /*   By: yjinnouc <yjinnouc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/31 19:17:59 by yjinnouc          #+#    #+#             */
-/*   Updated: 2023/11/21 00:40:12 by yjinnouc         ###   ########.fr       */
+/*   Updated: 2023/11/24 16:56:55 by yjinnouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-size_t ft_strlen(const char *s)
-{
-	int		n;
+#include "libft.h"
 
-	n = 0;
-	while (str[n] != '\0')
+size_t	ft_strlen(const char *s)
+{
+	int	count;
+
+	count = 0;
+	while (s[count] != '\0')
 	{
-		n++;
+		count++;
 	}
-	return (n);
+	return (count);
 }
 
 /*
