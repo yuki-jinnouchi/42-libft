@@ -6,11 +6,11 @@
 /*   By: yjinnouc <yjinnouc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 18:30:45 by yjinnouc          #+#    #+#             */
-/*   Updated: 2023/11/21 00:39:34 by yjinnouc         ###   ########.fr       */
+/*   Updated: 2023/11/23 17:08:47 by yjinnouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int isascii(int c)
+int	ft_isascii(int c)
 {
 	if (c < 0 || 127 < c)
 	{

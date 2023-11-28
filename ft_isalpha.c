@@ -6,11 +6,11 @@
 /*   By: yjinnouc <yjinnouc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 18:31:02 by yjinnouc          #+#    #+#             */
-/*   Updated: 2023/11/17 18:31:07 by yjinnouc         ###   ########.fr       */
+/*   Updated: 2023/11/23 17:09:53 by yjinnouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
 	if ((c < 'A' || 'Z' < c) && (c < 'a' || 'z' < c))
 	{

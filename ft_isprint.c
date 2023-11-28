@@ -6,16 +6,16 @@
 /*   By: yjinnouc <yjinnouc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 18:31:15 by yjinnouc          #+#    #+#             */
-/*   Updated: 2023/11/17 18:31:17 by yjinnouc         ###   ########.fr       */
+/*   Updated: 2023/11/23 17:08:41 by yjinnouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-    if (c < ' ' || '~' < c)
-    {
-        return (0);
-    }
+	if (c < ' ' || '~' < c)
+	{
+		return (0);
+	}
 	return (1);
 }
 

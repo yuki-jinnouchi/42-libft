@@ -6,18 +6,20 @@
 /*   By: yjinnouc <yjinnouc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 18:30:51 by yjinnouc          #+#    #+#             */
-/*   Updated: 2023/11/21 00:48:23 by yjinnouc         ###   ########.fr       */
+/*   Updated: 2023/11/27 20:43:14 by yjinnouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalnum(int c)
+#include "libft.h"
+
+int	ft_isalnum(int c)
 {
-	if (c < '0' || '9' < c)
+	if (ft_isdigit(c) == 0 && ft_isalpha(c) == 0)
 	{
 		return (0);
 	}
 	return (1);
-	}
+}
 
 /*
 #include <stdio.h>
