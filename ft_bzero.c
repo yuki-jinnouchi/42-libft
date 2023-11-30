@@ -17,7 +17,7 @@ void	ft_bzero(void *s, size_t n)
 	unsigned char	*tmp_s;
 
 	tmp_s = s;
-	while (*tmp_s != 0 && n > 0)
+	while (n > 0)
 	{
 		*tmp_s++ = 0;
 		n--;
