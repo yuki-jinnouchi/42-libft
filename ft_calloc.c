@@ -6,7 +6,7 @@
 /*   By: yjinnouc <yjinnouc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 17:58:35 by yjinnouc          #+#    #+#             */
-/*   Updated: 2023/11/30 19:49:53 by yjinnouc         ###   ########.fr       */
+/*   Updated: 2023/11/30 20:04:07 by yjinnouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 
 	if (nmemb == 0 || size == 0)
 	{
-		nmemb = 1;
+		nmemb = 0;
 		size = 1;
 	}
 	if (INT_MAX / size < nmemb)
