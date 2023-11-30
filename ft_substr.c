@@ -6,7 +6,7 @@
 /*   By: yjinnouc <yjinnouc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 18:08:39 by yjinnouc          #+#    #+#             */
-/*   Updated: 2023/11/28 00:04:44 by yjinnouc         ###   ########.fr       */
+/*   Updated: 2023/11/30 19:28:26 by yjinnouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,16 +32,19 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (s == NULL)
 		return (NULL);
 	s_len = ft_strlen(s);
-	if (start + len > s_len)
+	if (len + start > s_len)
 	{
-		if (s_len - 1 < start)
-			len = 0;
-		else
+		if (s_len >= start)
 			len = s_len - start;
+		else
+			len = 0;
 	}
 	ptr = (char *) malloc((len + 1) * sizeof(char));
 	if (!ptr)
 		return (0);
-	ft_strlcpy(ptr, (s + start), len + 1);
+	if (len == 0)
+		ft_strlcpy(ptr, "", 1);
+	else 
+		ft_strlcpy(ptr, (s + start), len + 1);
 	return (ptr);
 }
