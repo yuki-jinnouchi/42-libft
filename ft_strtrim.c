@@ -6,7 +6,7 @@
 /*   By: yjinnouc <yjinnouc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 18:08:30 by yjinnouc          #+#    #+#             */
-/*   Updated: 2023/11/27 16:18:29 by yjinnouc         ###   ########.fr       */
+/*   Updated: 2023/11/30 19:35:23 by yjinnouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ from the beginning and the end of the string.
 */
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char			*ptr;
-	unsigned int	s1_length;
-	unsigned int	start_count;
-	unsigned int	end_count;
+	char	*ptr;
+	int		s1_length;
+	int		start_count;
+	int		end_count;
 
 	if (s1 == 0 || set == 0)
 		return (0);
