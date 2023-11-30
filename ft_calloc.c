@@ -6,7 +6,7 @@
 /*   By: yjinnouc <yjinnouc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 17:58:35 by yjinnouc          #+#    #+#             */
-/*   Updated: 2023/11/24 16:01:02 by yjinnouc         ###   ########.fr       */
+/*   Updated: 2023/11/30 19:49:53 by yjinnouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,10 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	void	*ptr;
 
 	if (nmemb == 0 || size == 0)
-		return (0);
+	{
+		nmemb = 1;
+		size = 1;
+	}
 	if (INT_MAX / size < nmemb)
 		return (0);
 	ptr = (void *) malloc(nmemb * size);
