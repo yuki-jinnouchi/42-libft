@@ -73,7 +73,8 @@ DEST = $(OUTPUT_DIR)
 all: $(NAME)
 
 # main target
-$(NAME):	$(OBJECTS) ar
+$(NAME): $(OBJECTS)
+	ar rcs $@ $(OBJECTS)
 #			$(CC) -o $(OUTPUT_DIR)/$(NAME) $(OBJECTS)
 
 # Compile source files
