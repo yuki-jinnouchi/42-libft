@@ -6,7 +6,7 @@
 /*   By: yjinnouc <yjinnouc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 18:07:10 by yjinnouc          #+#    #+#             */
-/*   Updated: 2023/11/27 14:21:07 by yjinnouc         ###   ########.fr       */
+/*   Updated: 2023/12/02 18:29:29 by yjinnouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,9 @@ int	len_int(int n)
 	unsigned int	count;
 
 	count = 0;
-	if (n == -2147483648)
+	if (n == INT_MIN)
 	{
-		n = 2147483647;
+		n = INT_MAX;
 		count ++;
 	}
 	else if (n < 0)
@@ -69,7 +69,7 @@ char	*ft_itoa(int n)
 
 	if (n == 0)
 		return (ft_strdup("0"));
-	if (n == -2147483648)
+	if (n == INT_MIN)
 		return (ft_strdup("-2147483648"));
 	length = len_int(n);
 	ptr = malloc(sizeof(char) * (length + 1));

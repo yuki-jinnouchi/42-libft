@@ -6,7 +6,7 @@
 /*   By: yjinnouc <yjinnouc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 18:08:39 by yjinnouc          #+#    #+#             */
-/*   Updated: 2023/11/30 19:28:26 by yjinnouc         ###   ########.fr       */
+/*   Updated: 2023/12/02 18:28:36 by yjinnouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (0);
 	if (len == 0)
 		ft_strlcpy(ptr, "", 1);
-	else 
+	else
 		ft_strlcpy(ptr, (s + start), len + 1);
 	return (ptr);
 }

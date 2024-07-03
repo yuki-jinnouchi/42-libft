@@ -6,19 +6,17 @@
 /*   By: yjinnouc <yjinnouc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 21:27:21 by yjinnouc          #+#    #+#             */
-/*   Updated: 2023/11/23 21:31:00 by yjinnouc         ###   ########.fr       */
+/*   Updated: 2023/12/02 12:49:56 by yjinnouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-// size_t, malloc, MAX_INT
-
-# include <stdio.h>
-# include <stdlib.h>
-# include <limits.h>
-# include <unistd.h>
+# include <stdio.h> // size_t, NULL, printf
+# include <stdlib.h> // size_t, NULL, malloc, free
+# include <limits.h> // INT_MAX, INT_MIN
+# include <unistd.h> // write
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
