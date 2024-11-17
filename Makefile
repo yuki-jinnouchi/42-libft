@@ -38,7 +38,7 @@ $(NAME): $(OBJECTS)
 	@echo "----------------"
 	@echo "make $(NAME) done.\n"
 %.o: %.c
-	$(CC) $(CFLAGS) -I $(HEADERS) -c $< -o $@
+	$(CC) $(CFLAGS) -h $(HEADERS) -c $< -o $@
 clean:
 	rm -f $(OBJECTS)
 fclean: clean
