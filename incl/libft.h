@@ -6,7 +6,7 @@
 /*   By: yjinnouc <yjinnouc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 21:27:21 by yjinnouc          #+#    #+#             */
-/*   Updated: 2023/12/02 12:49:56 by yjinnouc         ###   ########.fr       */
+/*   Updated: 2024/11/18 13:12:59 by yjinnouc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,18 @@
 # define LIBFT_H
 
 # include <stdio.h> // size_t, NULL, printf
+# include <unistd.h> // write, read
 # include <stdlib.h> // size_t, NULL, malloc, free
 # include <limits.h> // INT_MAX, INT_MIN
-# include <unistd.h> // write
+# include <stdarg.h> // va_start, va_arg, va_copy, va_end
+# include <fcntl.h> // open, O_RDONLY
 
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
+
+// ----------------------------------------------------------------
+// libft - mandatory libc function
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
@@ -42,6 +50,7 @@ int		ft_atoi(const char *nptr);
 void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *s);
 
+// libft - mandatory not in libc
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
@@ -54,6 +63,7 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
+// libft bonus
 typedef struct s_list
 {
 	void			*content;
@@ -69,5 +79,44 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
+// ----------------------------------------------------------------
+// ft_printf
+int		ft_printf(const char *fmt, ...);
+int		ft_printf_format(char type, va_list args);
+int		ft_printf_char(int c);
+int		ft_printf_str(char *str);
+int		ft_printf_ptr(void *ptr);
+int		ft_printf_ptr_len(void *ptr);
+int		ft_printf_int(int nb);
+int		ft_printf_unsigned(unsigned long nb, int base, char *digits);
+
+// // for ft_printf bonus list
+// typedef struct s_flags
+// {
+// 	int	spec;
+// 	int	width;
+// 	int	left;
+// 	int	zero;
+// 	int	star;
+// 	int	precision;
+// 	int	hash;
+// 	int	space;
+// 	int	plus;
+// }		t_flags;
+
+// ----------------------------------------------------------------
+// get_next_line
+void	*gnl_calloc(size_t nmemb, size_t size);
+char	*gnl_parse_buff(char *buff, long length);
+char	*gnl_load_lines(long fd, char *buff);
+char	*get_next_line(long fd);
+
+// // for get_next_line bonus
+// typedef struct s_list
+// {
+// 	char			*str_buf;
+// 	struct s_list	*next;
+// }	t_list;
 
 #endif
